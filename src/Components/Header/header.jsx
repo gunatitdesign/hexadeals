@@ -8,8 +8,13 @@ function Header() {
         <h3 style={{paddingLeft:"5px"}}>HexaDeals</h3>
       </div>
 
-      <img src="header-bg.webp" alt="clay kitchen tava, port"
-        className='header-img'/>
+        <div className="image-wrapper">
+          <img src="header-bg.webp" alt="Hexadeals  - clay kitchen tava, pot" />
+        <div className="overlay"></div>
+        <div className="text-content">
+          <h3>Comming Soon - New Service</h3>
+        </div>
+      </div>
       </header>
     );
 }
