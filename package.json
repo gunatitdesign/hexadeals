@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gunatitdesign.github.io//hexadeals",
+  "homepage": "https://gunatitdesign.github.io/hexadeals",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
