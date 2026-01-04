@@ -4,8 +4,8 @@ import './photographyService.css';
 function PhotographyService() {
       const openInstagramProfile = () => {
         const username = "ravi.lakhtariya"; // replace with target user id
-        const appUrl = 'instagram://user?username=${username}';
-        const webUrl = 'https://www.instagram.com/${username}/';
+         const appUrl = `instagram://user?username=${username}`;
+          const webUrl = `https://www.instagram.com/${username}/`;
 
         // Try opening Instagram app
         window.location.href = appUrl;
@@ -28,7 +28,7 @@ function PhotographyService() {
 
     return (
          <div className="photography-card">
-            <div>
+            <div className="photography-card-content">
                 <h2 style={{marginBottom:'5px'}}>Photography Service</h2>
                 <p style={{marginTop:'5px',marginBottom:'5px'}}>We are available in <strong>Rajkot</strong></p>
                 <p style={{marginTop:'5px'}}><strong>Available:</strong> Saturday | Sunday </p>

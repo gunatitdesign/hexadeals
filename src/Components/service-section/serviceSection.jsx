@@ -8,7 +8,7 @@ function ServiceSection() {
     return (
     <div>
       <div style={{textAlign: "center"}}>
-      <h2 style={{marginBottom:'2px'}}>Top Services</h2>
+      <h2 style={{marginBottom:'2px'}}>Our Services</h2>
       <p style={{marginTop:'2px',fontSize:'14px'}}>Check availability of our services and message us in whatsapp</p>
       </div>
       <div className="service-container">

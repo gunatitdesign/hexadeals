@@ -6,21 +6,28 @@ import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 function ProductCard({ product }) {
   const { name, description, price, image, whatsappLink, availability } = product;
   
-  const openWhatsAppLink = () => {
-  const appUrl = "whatsapp://send?phone=918780497908";
+  const openWhatsAppFallback = () => {
+  const phone = "918780497908";
+  const message = "Hi, I am interested in this product";
+  const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
-  // Try opening WhatsApp app
-  window.location.href = appUrl;
-
-  // Fallback to browser
-  setTimeout(() => {
-    window.open(product.whatsappLink, "_blank");
-  }, 1500);
+  window.open(whatsappUrl, "_blank");
 };
 
-<button onClick={openWhatsAppLink}>
-  Open WhatsApp
-</button>
+const openPrimaryLink = () => {
+  const opened = window.open(product.whatsappLink, "_blank");
+
+  setTimeout(() => {
+    if (opened) {
+      const confirmWhatsApp = window.confirm(
+        "Unable to open link. Would you like to contact via WhatsApp?"
+      );
+      if (confirmWhatsApp) {
+        openWhatsAppFallback();
+      }
+    }
+  }, 2000);
+};
 
   return (
     <div className="product-card">
@@ -38,7 +45,7 @@ function ProductCard({ product }) {
         <br></br>
         {availability.inStock ? (
           <a
-            href={openWhatsAppLink}
+            href={openPrimaryLink}
             target="_blank"
             rel="noopener noreferrer"
             className="whatsapp-btn"

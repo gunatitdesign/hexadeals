@@ -14,7 +14,7 @@ function RapidoService() {
 
     return (
          <div className="rapido-card">
-            <div>
+            <div className="rapido-card-content">
                 <h2 style={{marginBottom:'5px'}}>Rapido Service</h2>
                 <p style={{marginTop:'5px'}}>Book Rider - We are available in Rajkot</p>
                 <button className="rapido-card-button" onClick={openRapido} formTarget="_blank">Book Bike Ride</button>
