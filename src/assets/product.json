@@ -1,0 +1,28 @@
+[
+        {
+        "id": 1,
+        "name": "Clay Tawa",
+        "description": "High-quality clay tawa for cooking.",
+        "price": 15.00,
+        "actual-price": 25.00,
+        "image": ["clay-tawa1.jpg"],
+        "whatsapp-link": "https://wa.me/p/24098530296429472/918780497908",
+        "availability": {
+            "inStock": true
+        } 
+    },
+    {
+        "id": 2,
+        "name": "Black clay Tawa",
+        "description": "High-quality black clay tawa for cooking.",
+        "price": 20.00,
+        "actual-price": 30.00,
+        "image": ["clay-black-tawa.jpg"],
+        "whatsapp-link": "https://wa.me/p/6548780128578198/918780497908",
+        "availability": {
+            "inStock": false
+        }
+    }
+    
+
+]
