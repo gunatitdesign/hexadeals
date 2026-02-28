@@ -1,0 +1,10 @@
+.root{padding:0.5rem 0}
+h3{padding: 1rem 0}
+.profileCard{display:flex;gap:1rem;align-items:center;flex-wrap:wrap;background:var(--card-bg);padding:1rem;border-radius:8px;box-shadow:var(--card-shadow);margin-bottom:1.5rem}
+.profileCard img{width:120px;height:120px;border-radius:50%;object-fit:cover}
+.profileLinks a{margin-right:0.5rem;color:var(--brand);text-decoration:none;font-size:1.1rem}
+.videoGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem}
+.videoLink{display:block;text-decoration:none;color:#111}
+.videoLink img{width:100%;border-radius:4px}
+.whatsapp{display:inline-block;margin-top:0.5rem;padding:0.5rem 1rem;background:var(--accent);color:white;border-radius:4px;text-decoration:none;font-weight:600}
+.whatsapp:hover{background:var(--brand)}

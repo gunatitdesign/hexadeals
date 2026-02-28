@@ -1,0 +1,5 @@
+.carousel{position:relative;overflow:hidden;height:35vh;max-height:400px}
+.slide{position:absolute;top:0;left:0;right:0;bottom:0;background-size:cover;background-position:center;opacity:0;transition:opacity .6s ease}
+.slide.active{opacity:1}
+.controls{position:absolute;top:50%;left:0;right:0;display:flex;justify-content:space-between;transform:translateY(-50%);pointer-events:none}
+.controls button{pointer-events:auto;background:rgba(0,0,0,0.3);border:none;color:white;font-size:2rem;padding:0 1rem;cursor:pointer;border-radius:4px}

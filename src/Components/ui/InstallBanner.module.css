@@ -1,0 +1,2 @@
+.banner{position:fixed;left:16px;right:16px;bottom:16px;background:white;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.08);padding:12px}
+.inner{display:flex;justify-content:space-between;align-items:center}

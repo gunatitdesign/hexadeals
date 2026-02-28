@@ -1,21 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './Components/Header/header'
-import Footer from './Components/Footer/footer'
-import Main from './Components/Main/main'
-import FloatingWhatsApp from './Components/floating-whatsapp'
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/layout/Layout';
+import Home from './pages/Home';
+import Products from './pages/Products';
+import ProductDetail from './pages/ProductDetail';
+import Services from './pages/Services';
+import Categories from './pages/Categories';
+import NotFound from './pages/NotFound';
+import './App.css';
 
-function App() {
+export default function App(){
   return (
-    <>
-    <Header />
-    <Main />
-    <Footer />
-    <FloatingWhatsApp />
-    </>
-  )
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/categories" element={<Categories/>} />
+        <Route path="/products" element={<Products/>} />
+        <Route path="/products/:id" element={<ProductDetail/>} />
+        <Route path="/services" element={<Services/>} />
+        <Route path="*" element={<NotFound/>} />
+      </Routes>
+    </Layout>
+  );
 }
-
-export default App
