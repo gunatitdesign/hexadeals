@@ -17,7 +17,7 @@ export default function Navbar(){
         {/* main links */}
         <nav className={styles.links}>
           <Link to="/">Home</Link>
-          <Link to="/categories">Categories</Link>
+          {/* <Link to="/categories">Categories</Link> */}
           <Link to="/products">Products</Link>
           <Link to="/services">Services</Link>
         </nav>

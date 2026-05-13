@@ -1,2 +1,9 @@
-.root{border-top:1px solid #eef2f7;padding:2rem 0;background:#fff;margin-top:2rem}
+.root{
+    border-top:1px solid #eef2f7;
+    padding:2rem 0;
+    background:#fff;
+    margin-top:2rem;
+    align-items: center;
+    text-align: center;
+}
 .root .muted{color:var(--muted)}

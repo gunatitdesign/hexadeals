@@ -13,7 +13,7 @@ export default function Home(){
   return (
     <div className={styles.root}>
       <Carousel />
-      <CategorySection />
+      
       <ProductSection />
       <ServicesSection />
       <DietSection />
