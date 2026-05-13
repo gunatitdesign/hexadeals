@@ -10,7 +10,6 @@ export default function DietSection(){
     <section className={styles.root}>
       <div className="container">
         <h3>Diet & Nutrition Videos</h3>
-        <br/>
         <div className={styles.profileCard}>
           <img src={profile.img} alt={profile.name} />
           <div>
