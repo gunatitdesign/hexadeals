@@ -14,6 +14,7 @@ export default function ProductSection(){
                 src={`${p.image[0]}`}
                 alt={p.name}
                 className={styles.img}
+                loading="lazy"
               />
               <h4>{p.name}</h4>
               <p>{p.description}</p>

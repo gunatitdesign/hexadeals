@@ -6,7 +6,7 @@ export default function ProductCard({ product }){
   return (
     <article className={styles.card}>
       <Link to={`/products/${product.id}`} className={styles.link}>
-        <img src={product.image} alt={product.title} className={styles.image} />
+        <img src={product.image} alt={product.title} className={styles.image} loading="lazy" />
         <div className={styles.body}>
           <h4 className={styles.title}>{product.title}</h4>
           <p className="muted">₹{product.price}</p>

@@ -13,7 +13,7 @@ export default function CreatorSection(){
         <div className={styles.videoGrid}>
           {shorts.map(v => (
             <a key={v.id} href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener noreferrer" className={styles.videoLink}>
-              <img src={v.thumbnail} alt={v.title} />
+              <img src={v.thumbnail} alt={v.title} loading="lazy" />
               <p className="small">{v.title}</p>
             </a>
           ))}

@@ -7,7 +7,7 @@ export default function ProfileInfoCard(profile){
   return (
     <section className={styles.root}>
        <div className={styles.profileCard}>
-          <img src={profile.img} alt={profile.name} />
+          <img src={profile.img} alt={profile.name} loading="lazy" />
           <div>
             <h4>{profile.name}</h4>
             <p className="muted small">{profile.speciality}</p>

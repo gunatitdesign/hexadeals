@@ -23,7 +23,7 @@ export default function ServicesSection(){
                 >WhatsApp</a>
               )}
               </div>
-              {s.img && <img src={s.img} alt={s.title} className={styles.image} />}
+              {s.img && <img src={s.img} alt={s.title} className={styles.image} loading="lazy" />}
             </div>
           ))}
         </div>
