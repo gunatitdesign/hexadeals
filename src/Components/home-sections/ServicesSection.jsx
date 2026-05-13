@@ -11,7 +11,7 @@ export default function ServicesSection(){
         <div className={styles.grid}>
           {services.map(s=> (
             <div key={s.id} className={styles.card}>
-              {s.img && <img src={s.img} alt={s.title} className={styles.image} />}
+             <div className={styles.content}>
               <h4>{s.title}</h4>
               <p className="muted small">{s.description}</p>
               {s.whatsapp && (
@@ -22,6 +22,8 @@ export default function ServicesSection(){
                   className={styles.whatsapp}
                 >WhatsApp</a>
               )}
+              </div>
+              {s.img && <img src={s.img} alt={s.title} className={styles.image} />}
             </div>
           ))}
         </div>
